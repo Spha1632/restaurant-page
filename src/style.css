@@ -26,16 +26,58 @@ header {
 	padding: 16px 32px;
 }
 
-nav {
+header nav {
 	display: flex;
 	justify-content: space-between;
 	height: 100%;
 	gap: 32px;
 }
 
-button {
-	font-size: 1.2rem;
+header button {
+	font-size: 1.1rem;
 	background: none;
 	border: none;
 	color: var(--text-color);
+}
+
+.main {
+	height: calc(100dvh - 60px);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: left;
+}
+
+.main-content {
+	padding-top: 100px;
+	padding-right: 100px;
+}
+
+.main-content h1 {
+	margin-bottom: 8px;
+	font-size: 3rem;
+}
+
+.main-content p {
+	opacity: .7;
+	margin-bottom: 16px;
+	font-size: 1.1rem;
+}
+
+.main-content button {
+	border: none;
+	padding: 8px 32px;
+	border-radius: 4px;
+	color: var(--text-color);
+	background-color: transparent;
+	font-size: 1rem;
+}
+
+.main-content .aboutBtn {
+	background-color: red;
+	border: 1px solid red;
+	margin-right: 12px;
+}
+
+.main-content .menuBtn {
+	border: 1px solid var(--text-color);
 }
