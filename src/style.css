@@ -23,7 +23,7 @@ header {
 	height: 60px;
 	display: flex;
 	justify-content: end;
-	padding: 16px 32px;
+	padding: 16px 100px;
 }
 
 header nav {
@@ -97,4 +97,38 @@ header button {
 .about-section .about-subtext {
 	opacity: .6;
 	margin-bottom: 24px;
+}
+
+.menu-section {
+	padding: 30px 100px;
+}
+
+
+.menu-section .menu-grid {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 32px;
+}
+
+.menu-grid .grid-item {
+	background-color: #0e0e0e;
+	padding: 16px;
+	border-radius: 5px;
+}
+
+.menu-grid .grid-item img{
+	object-fit: cover;
+	aspect-ratio: 1/1;
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 16px;
+}
+
+.menu-grid .grid-item h2 {
+	margin-bottom: 8px;
+}
+
+.menu-grid .grid-item p {
+	opacity: .6;
 }
