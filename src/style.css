@@ -11,7 +11,7 @@
 body {
   max-width: 100dvw;
 	height: 100dvh;
-	background-image: url("./images/grilled-steak-with-rosemary-spices-dark-stone-background.jpg");
+	background-color: black;
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: var(--text-color);
@@ -52,7 +52,7 @@ header button {
 	padding-right: 100px;
 }
 
-.main-content h1 {
+.main-content h1, .about-section h1{
 	margin-bottom: 8px;
 	font-size: 3rem;
 }
@@ -63,7 +63,7 @@ header button {
 	font-size: 1.1rem;
 }
 
-.main-content button {
+.main-content button, .reserveBtn {
 	border: none;
 	padding: 8px 32px;
 	border-radius: 4px;
@@ -72,7 +72,7 @@ header button {
 	font-size: 1rem;
 }
 
-.main-content .aboutBtn {
+.main-content .aboutBtn, .reserveBtn {
 	background-color: red;
 	border: 1px solid red;
 	margin-right: 12px;
@@ -80,4 +80,21 @@ header button {
 
 .main-content .menuBtn {
 	border: 1px solid var(--text-color);
+}
+
+.about-section {
+	padding-top: 100px;
+	padding-left: 100px;
+	width: 600px;
+}
+
+.about-section p {
+	opacity: .9;
+	margin-bottom: 12px;
+	font-size: 1.1rem;
+}
+
+.about-section .about-subtext {
+	opacity: .6;
+	margin-bottom: 24px;
 }
